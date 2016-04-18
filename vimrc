@@ -10,6 +10,9 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'fatih/vim-go'
+Plugin 'scrooloose/nerdtree'
+Plugin 'tpope/vim-fugitive'
+Plugin 'kien/ctrlp.vim'
 
 " All of my plugins must be added before the following line
 call vundle#end()            " required
@@ -18,8 +21,8 @@ filetype plugin indent on    " required
 " my settings
 
 " color scheme - use 256 colors to overide gnome color settings
-set t_Co=256            
-colorscheme molokai
+"set t_Co=256            
+"colorscheme molokai
 
 " enable syntax processing
 syntax enable
@@ -45,3 +48,6 @@ set hlsearch
 
 " turn off search highlight
 nnoremap <leader><space> :nohlsearch<CR>
+
+" Set shortcut for NERDTREE
+map <C-\> :NERDTreeToggle<CR>

@@ -1,1 +1,11 @@
-/home/micboyd/Dotfiles/.gitconfig
+[user]
+	name = micboyd
+	email = mboyd855@gmail.com
+[credential]
+	helper = cache
+[push]
+	default = simple
+[core]
+	editor = "atom -w"
+[diff]
+    external = git-meld
